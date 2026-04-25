@@ -11,6 +11,7 @@
     grid-template-columns: repeat(3, 1fr);
     // justify-content: space-between;
     text-align: center;
+    animation: imageTransform 3s ease-in-out;
 
     .imgItems {
         // width: 100%;
@@ -25,7 +26,6 @@
         }
     }
 }
-
 
 .section3 {
     max-width: 1030px;
@@ -55,6 +55,17 @@
             font-weight: 600;
             font-size: 36px;
         }
+    }
+}
+
+@keyframes imageTransform {
+    0% {
+        opacity: 0;
+        transform: translateY(+50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
