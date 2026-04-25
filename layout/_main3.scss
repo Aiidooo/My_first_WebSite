@@ -1,0 +1,155 @@
+.section5 {
+    margin-bottom: 60px;
+    max-width: 1029px;
+
+    h2 {
+        margin-bottom: 30px;
+    }
+
+    p {
+        margin-bottom: 30px;
+    }
+}
+
+
+.sectionSignup {
+    margin-bottom: 70px;
+    padding: 10px;
+
+    .divH2 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .section6 {
+        display: flex;
+        gap: 125px;
+        justify-content: center;
+
+        .signupPar {
+            max-width: 610px;
+        }
+
+        .signup {
+            max-width: 505px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            .input1 {
+                cursor: pointer;
+                font-weight: 400;
+                font-size: 16px;
+                background-color: unset;
+                border-color: white;
+                color: white;
+                margin-bottom: 20px;
+                width: 505px;
+                height: 55px;
+                padding: 16px;
+
+                &:focus {
+                    border-color: rgb(245, 245, 245);
+                    outline: none;
+                    box-shadow: 0 0 5px rgb(255, 255, 255);
+                }
+            }
+        }
+    }
+}
+
+.mountainImg {
+    padding: 60px 0;
+    background-image: url('assets/images/mountain-Rectangle-64.svg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+
+    // top: 3461.19px;
+    // //background-image: url('
+    // background: linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(../assets/images/mountain-Rectangle-64.svg);
+    //}
+
+    .section7 {
+        display: flex;
+        flex-direction: column;
+        margin-inline: auto;
+        color: black;
+        max-width: 1025px;
+        padding: 10px;
+
+        // анимейшн и трансформ узнать
+        // transition: all 0.5s ease-in-out 0.2s;
+        // transform: translateX();
+
+        h2 {
+            margin-bottom: 30px;
+        }
+
+        p {
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            color: black;
+            border-color: black;
+        }
+    }
+}
+
+// .Mountain1 {
+
+/* Rectangle 64 */
+
+// position: absolute;
+// width: 1440px;
+// height: 400px;
+// left: 0px;
+
+
+@media screen and (max-width: 1240px) {
+    .sectionSignup {
+        .section6 {
+            gap: 50px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 850px) {
+    .sectionSignup {
+        .section6 {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 625px) {
+    .sectionSignup {
+        .section6 {
+            .signup {
+                .input1 {
+                    width: 400px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .sectionSignup {
+        .section6 {
+            .signup {
+                .input1 {
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
